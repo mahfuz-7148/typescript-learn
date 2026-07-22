@@ -22,7 +22,7 @@ const todos: Todo[] = [
     new Todo(3, "Practice Zod validation"),
 ];
 
-todos[0].markComplete();
+todos[0]?.markComplete();
 
 // Generic function - kono type er array niye kaj korte pare
 function findById<T extends { id: number }>(items: T[], id: number): T | undefined {
